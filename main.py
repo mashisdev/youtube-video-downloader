@@ -23,7 +23,7 @@ def download_video(url: str):
             return
 
         # Descargar el video
-        stream.download()
+        stream.download(output_path="downloads")
         print("✅ Descarga completada con éxito")
 
     except Exception as e:

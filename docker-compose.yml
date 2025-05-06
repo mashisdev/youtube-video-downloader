@@ -1,0 +1,7 @@
+services:
+  youtube-downloader:
+    build: .
+    container_name: youtube-downloader
+    volumes:
+      - ./downloads:/app/downloads
+    tty: true
