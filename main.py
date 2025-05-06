@@ -2,14 +2,14 @@ from pytubefix import YouTube
 
 def download_video(url: str):
     try:
-        # Limpiar la URL
+        # Clean the URL
         url = url.strip().split('&')[0]
 
-        # Crear objeto YouTube
+        # Create YouTube object
         yt = YouTube(url)
-        print(f"🎬 Título del video: {yt.title}")
+        print(f"🎬 Video title: {yt.title}")
 
-        # Seleccionar el mejor stream progresivo en mp4
+        # Select the best progressive stream in mp4
         stream = (
             yt.streams
             .filter(progressive=True, file_extension='mp4')
@@ -19,16 +19,16 @@ def download_video(url: str):
         )
 
         if not stream:
-            print("⚠️ No se encontró un stream válido")
+            print("⚠️ No valid stream found")
             return
 
-        # Descargar el video
+        # Download the video
         stream.download(output_path="downloads")
-        print("✅ Descarga completada con éxito")
+        print("✅ Download completed successfully")
 
     except Exception as e:
-        print(f"❌ Error inesperado: {e}")
+        print(f"❌ Unexpected error: {e}")
 
 if __name__ == "__main__":
-    url = input("Ingrese la URL del video de YouTube: ")
+    url = input("Enter the YouTube video URL: ")
     download_video(url)
