@@ -1,10 +1,12 @@
-# First stage: build
 FROM python:3.12-alpine
-
-COPY . /app
 
 WORKDIR /app
 
-RUN pip install --upgrade pip && pip install -r requirements.txt
+COPY . /app
 
-CMD [ "python3", "./main.py" ]
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install -r requirements.txt
+
+RUN mkdir -p downloads
+
+CMD ["python", "main.py"]
