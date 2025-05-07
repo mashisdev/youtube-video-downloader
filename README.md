@@ -3,7 +3,7 @@
 </p>
 
 # YouTube Video Downloader
-A simple and efficient command-line tool to download YouTube videos using Python and the pytubefix library.
+A simple and efficient command-line tool to download YouTube videos using Python and the `pytubefix` library.
 
 ### 🚀 Features
 - 📥 Enter the video URL interactively via terminal and download YouTube videos in the highest available resolution.
