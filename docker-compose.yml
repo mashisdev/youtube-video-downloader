@@ -1,6 +1,7 @@
 services:
   youtube-downloader:
     build: .
+    image: youtube-downloader
     container_name: youtube-downloader
     volumes:
       - ./downloads:/app/downloads
