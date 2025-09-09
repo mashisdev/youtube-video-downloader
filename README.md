@@ -1,4 +1,4 @@
-# <img src="https://github.com/user-attachments/assets/27f0e6f9-b491-4848-89b8-5445fe6d93a2" alt="youtube-logo" width=40 /> YouTube Video Downloader
+# <img src="https://github.com/user-attachments/assets/27f0e6f9-b491-4848-89b8-5445fe6d93a2" alt="youtube-logo" width=32 />🎥 YouTube Video Downloader
 A simple and efficient command-line tool to download YouTube videos using Python and the `pytubefix` library.
 
 ### 🚀 Features
